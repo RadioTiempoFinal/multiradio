@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Radio Player</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/mohsenjahani/sahel-font/dist/font-face.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+<div class="container" style="margin-top: 20px">
+    <h2 style="text-align: center; ">Radio Tiempo Final</h2>
+    <div class="row">
+      <div class="col-md col-sm-12">
+<!--Inicia Reproductor 1-->
+        <div class="player1">
+            <audio id="audio1" type="audio/mp3" controls 
+                src="https://sonic.mediacp.eu:8126/stream"></audio>
+            <div class="cover">
+                <img src="https://i.imgur.com/R3J552c.png" alt="">
+                <svg height="220" width="220">
+                    <circle cx="50%" cy="50%" r="100" stroke-width="10" />
+                    <circle cx="50%" cy="50%" r="100" stroke-width="10" />
+                </svg>
+            </div>
+            <div class="bottom">
+                <div class="info">
+                    <div class="title">Radio Tiempo Final</div>
+                    <div class="artist">En Vivo<span class="time"></span></div>
+                </div>
+                <button class="material-icons">play_arrow</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md col-sm-12">
+<!--Finaliza Reproductor 1-->
+<!--Inicia Reproductor 2-->
+        <div class="player2">
+            <audio id="audio2" type="audio/mp3" controls 
+                src="https://stream.zeno.fm/f832qdc7uv8uv"></audio>
+            <div class="cover">
+                <img src="https://i.imgur.com/7zWhiNX.png" alt="">
+                <svg height="220" width="220">
+                    <circle cx="50%" cy="50%" r="100" stroke-width="10" />
+                    <circle cx="50%" cy="50%" r="100" stroke-width="10" />
+                </svg>
+            </div>
+            <div class="bottom">
+                <div class="info">
+                    <div class="title">Radio Tiempo Final</div>
+                    <div class="artist">En Vivo<span class="time"></span></div>
+                </div>
+                <button class="material-icons">play_arrow</button>
+            </div>
+        </div>
+<!--Finaliza Reproductor 2-->
+      </div>
+    </div>
+</div><!--Finaliza seccion reproductores-->
+<div class="container text-center botones">
+    <h2 style="text-align: center; ">Nuestra Radio en otras plataformas</h2>
+    <div class="row">
+        <div class="col-lg-12 ">
+        <a href="https://centro-de-alabanza-tierra-deseable.cms.webnode.es/radio-en-vivo/" target="_blank" class="btn btn-danger btn-lg" role="button"><span class="material-icons">radio</span> Sitio WEB</a>
+        <a href="https://play.google.com/store/apps/details?id=radio.tiempofinal" target="_blank" class="btn btn-danger btn-lg" role="button"><span class="material-icons">radio</span> Descarga Nuestra App</a>
+        <a href="https://www.facebook.com/RadioTiempoFinal//" target="_blank" class="btn btn-danger btn-lg" role="button"><span class="material-icons">radio</span> Síguenos en FB</a>
+        </div>
+     <div class="col-lg-12 ">
+        <a href="https://www.instagram.com/radio_tiempo_final//" target="_blank" class="btn btn-danger btn-lg" role="button"><span class="material-icons">radio</span> Instagram</a>
+        <a href="https://www.youtube.com/@asociacioncristianatierrad1665//" target="_blank" class="btn btn-danger btn-lg" role="button"><span class="material-icons">radio</span> Canal Youtube</a>
+        </div> 
+      
+      
+    </div>
+</div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

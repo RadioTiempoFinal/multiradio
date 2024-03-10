@@ -1,0 +1,126 @@
+body {
+
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  height: 100vh;
+  margin: 0;
+}
+body * {
+  font-family: Sahel, sans-serif;
+}
+
+.player1, .player2 {
+
+  margin: 90px auto 25px ;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.108);
+}
+.player1 audio, .player2 audio {
+  display: none;
+}
+
+.player1 .cover, .player2 .cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.player1 .cover img, .player2 .cover img {
+  width: 195px;
+  height: 195px;
+  border-radius: 500px;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  transition: all 0.5s;
+  transform: rotate(0);
+}
+
+.player1 .cover svg, .player2 .cover svg {
+  position: relative;
+  z-index: 2;
+}
+.player1 .cover svg:hover circle:nth-child(2), .player2 .cover svg:hover circle:nth-child(2) {
+  stroke-width: 13px;
+}
+.player1 .cover svg circle, .player2 .cover svg circle {
+  stroke-linecap: round;
+  cursor: pointer;
+  fill: none;
+  stroke: #eee;
+}
+.player1 .cover svg circle:nth-child(2), .player2 .cover svg circle:nth-child(2) {
+  stroke: #eee;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.player1 .bottom, .player2 .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.player1 .bottom .info, .player2 .bottom .info {
+  color: #292929;
+}
+.player1 .bottom .info .title, .player2 .bottom .info .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.player1 .bottom .info .artist, .player2 .bottom .info .artist {
+  font-weight: 200;
+  font-size: 15px;
+  color: #747474;
+}
+.player1 .bottom .info .artist .time, .player2 .bottom .info .artist .time {
+  color: #ccc;
+}
+.player1 .bottom button, .player2 .bottom button {
+  font-size: 25px;
+  outline: none;
+  color: #fff;
+  border: none;
+  width: 55px;
+  height: 55px;
+  background-color: #d61616;
+  border-radius: 500px;
+  box-shadow: 0 10px 20px rgba(150, 85, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.player1 .bottom button:hover, .player2 .bottom button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(150, 85, 255, 0.2);
+}
+.player1 .bottom button:active, .player2 .bottom button:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 20px rgba(150, 85, 255, 0.1);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-rotate {
+  animation: rotate 20s infinite linear;
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}
+.btn{
+  margin: 5px;
+  min-width: 300px;
+}
